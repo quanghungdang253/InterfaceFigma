@@ -1,0 +1,50 @@
+.Onclicks:link {   /* Nếu liên kết chưa được truy cập lần nào thì hiển thị màu xah ngược lại hiển thị màu đỏ nghĩa là lk đã được try cập rồi*/
+        color: rgb(86, 248, 5);
+        font-size: 30px;
+    }
+    .Onclicks:visited {
+        color: rgb(248, 25, 5);
+    }
+    .Onclicks:hover { /* khi người dùng hover chuột sẽ đổi màu*/
+        color: rgb(228, 247, 16);
+    }
+    .Onclicks:active {
+        color: rgb(11, 254, 230);
+    }
+#Body{
+      
+       
+}
+h2:target{
+                background-color: aqua;
+}
+
+ol::before{
+    content: "Anh gì ơi";
+}
+ol::after{
+    content: "Có gì không bạn";
+}
+body{
+        height: 10000px;
+}
+p::first-line{ /* Chọn dòng  đầu tiên của thẻ p */
+    background-color: aqua;
+}
+
+p::first-letter{ /* Chọn chữ cái đầu tiên của thẻ <p>*/ 
+    font-size: 30px;
+}
+p::selection{ /*Chọn vùng đang được bôi đen */
+    background-color: blue;
+}
+
+li::marker{
+    color: red;
+}
+
+/* ==========ví dụ về cách sử dụng class tránh trùng lặp ==== */
+
+.header .body{
+    background-color: aqua;
+}

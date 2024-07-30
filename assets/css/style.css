@@ -1,0 +1,128 @@
+*{
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* khôi phục lại mặc định cỡ chữ theo rem  */
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* ===========================Common(phần chung)=================== */
+.main-content {
+    width: 1170px; /* Đây là chiều rộng cố định  */  
+    max-width: calc(100% - 48px);
+    margin-right: auto;
+    margin-left: auto;   
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block   ;
+    color: white;
+    font-size: 1.6rem;
+    background-color: black;
+    padding: 0 1.6rem;
+    border-radius: 999px;
+    text-align: center;
+    line-height: 50px;
+}
+
+.index-summary {
+    display: flex;
+}
+
+
+
+
+/*===================================================*/
+
+/* ========================================== */
+/* ===========================header====================== */
+.header .body {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    padding: 36px 0px 8px 0px ;
+
+  
+
+    
+}
+.header{
+    background-color: aqua;
+}
+.nav {
+    margin-left: auto;
+}
+
+.nav ul {
+    display: flex;
+}
+.nav a{
+    position: relative;
+   color: rgb(29, 23, 23);
+   font-size: 1.6rem;
+ 
+   padding:   8px 21px;
+    
+}
+ 
+.nav li.active a,
+.nav a:hover {
+    text-shadow: 1px 1px black;  /* Bóng đổ của văn bán */
+}
+ .nav li.active a::after { /* thêm  một dấu gạch chân vào bên trong thẻ a . nhưng  hiển thị ở sau nội dung của thẻ a*/
+  display: block;
+    content: "";
+    width: 12px;
+    height: 2px;
+    background-color: black;
+
+    position: absolute;
+    left: 21px;
+    bottom: 6px;
+   
+}
+
+.header .btn-sign-up{
+    min-width: 144px
+}
+
+/* ========phần hero herder===== */
+.media-block .hero-summary {
+        padding: 5rem 5rem;
+
+        background-color: white;
+        position: absolute;
+        bottom: 10rem;
+        right: 60rem;
+
+        display: grid;
+        grid-row-gap: 2rem;
+
+        border-top-left-radius: 2rem;
+}
+.hero .media-block{
+        position: relative;
+}
+
+
+
+
+
+
+
+
+
