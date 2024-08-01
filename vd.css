@@ -48,3 +48,42 @@ li::marker{
 .header .body{
     background-color: aqua;
 }
+
+/* ==============ví dụ về Varible trong css=========================== */
+html {   /* cài đặt root */ 
+    --box-color: rgb(46, 243, 15);
+    --box-width:100px;
+    --box-height:200px;
+    --box-background:green;
+}
+.text{
+    --box-text: red;
+    --box-span:blue;
+}
+.content{
+      width: var(--box-height);
+      height: var(--box-width);
+      background-color: var(--box-background);
+}
+.box1{
+    background-color: var(--box-color);
+}
+.box2{
+    background-color: var(--box-color);
+}
+.box3{
+    background-color: var(--box-color);
+}
+.text{
+    background-color: var(--box-text);
+}
+.text1 {
+    background-color: var(--box-span);
+}
+/* ============================================================================ */
+
+/*  =========================ví dụ về css paseudo-classes=================================== */
+
+p:nth-child(2n+2){
+    background-color: aqua;
+}
